@@ -63,3 +63,10 @@ function allWagesFor(employee){
   });
   return sum
 }
+function calculatePayroll(arrayemployees){
+  let sum = 0
+  arrayemployees.forEach(function(employee){
+   sum = sum+ allWagesFor(employee)
+  })
+  return sum
+}
