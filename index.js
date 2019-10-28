@@ -43,5 +43,11 @@ function hoursWorkedOnDate(employee, dateday){
   inobject = employee.timeInEvents.find(function(e){
         return e.date === dateday
     })
+    
+      outobject = employee.timeOutEvents.find(function(e){
+        return e.date === dateday
+    })
+    
+    return outobject.hour - inobject.hour
 }
 
