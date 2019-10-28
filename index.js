@@ -48,6 +48,6 @@ function hoursWorkedOnDate(employee, dateday){
         return e.date === dateday
     })
     
-    return outobject.hour - inobject.hour
+    return (outobject.hour - inobject.hour)/100
 }
 
