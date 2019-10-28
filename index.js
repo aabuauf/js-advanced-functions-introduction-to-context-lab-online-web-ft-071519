@@ -55,3 +55,11 @@ function wagesEarnedOnDate(employee, dateday){
   return hoursWorkedOnDate(employee, dateday) * employee.payPerHour
   
 }
+
+function allWagesFor(employee){
+  let sum = 0
+  employee.timeInEvents.forEach(function(e) {
+   sum = sum+ wagesEarnedOnDate(employee, e.date)
+  });
+  return sum
+}
