@@ -70,3 +70,10 @@ function calculatePayroll(arrayemployees){
   })
   return sum
 }
+
+function findEmployeeByFirstName(arrayemployees,firstName){
+  let result = arrayemployees.find(function(employee){
+        return employee.firstName === firstName
+    })
+    return result
+}
