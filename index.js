@@ -33,7 +33,7 @@ return employee
 function createTimeOutEvent(employee,datestamp){
   let [date, hour] = datestamp.split(' ')
   employee.timeoutEvents.push({       
-       type: "TimeIn",
+       type: "TimeOut",
         hour: parseInt(hour, 10),
         date,})
 return employee  
