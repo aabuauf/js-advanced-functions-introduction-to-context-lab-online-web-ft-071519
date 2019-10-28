@@ -40,5 +40,5 @@ return employee
 }
 
 function hoursWorkedOnDate(employee, dateday){
-  employee.timeInEvents
+  employee.timeInEvents.find(isOdd)
 }
