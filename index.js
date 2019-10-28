@@ -40,6 +40,8 @@ return employee
 }
 
 function hoursWorkedOnDate(employee, dateday){
-  employee.timeInEvents.find(timeInEvents.date===dateday)
+  employee.timeInEvents.find(function(e){
+        return e.date === dateday
+    })
 }
 
