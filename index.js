@@ -38,3 +38,7 @@ function createTimeOutEvent(employee,datestamp){
         date,})
 return employee  
 }
+
+function hoursWorkedOnDate(employee, dateday){
+  
+}
