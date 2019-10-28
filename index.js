@@ -51,3 +51,7 @@ function hoursWorkedOnDate(employee, dateday){
     return (outobject.hour - inobject.hour)/100
 }
 
+function wagesEarnedOnDate(employee, dateday){
+  return hoursWorkedOnDate(employee, dateday) * employee.payPerHour
+  
+}
