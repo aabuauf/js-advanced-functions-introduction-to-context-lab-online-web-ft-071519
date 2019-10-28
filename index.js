@@ -29,3 +29,12 @@ function createTimeInEvent(employee,datestamp){
         date,})
 return employee
 }
+
+function createTimeOutEvent(employee,datestamp){
+  let [date, hour] = datestamp.split(' ')
+  employee.timeoutEvents.push({       
+       type: "TimeIn",
+        hour: parseInt(hour, 10),
+        date,})
+return employee  
+}
